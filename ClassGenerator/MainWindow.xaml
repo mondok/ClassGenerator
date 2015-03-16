@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClassGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClassGenerator"
+        mc:Ignorable="d"
+        Title="Class Generator" Height="517" Width="978">
+	<Grid>
+		<Label x:Name="label" Content="Language" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+		<ComboBox x:Name="cmbLanguage" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="210">
+		</ComboBox>
+		<Label x:Name="label1" Content="Scaffold Text" HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtScaffold" HorizontalAlignment="Left" Height="87" Margin="257,41,0,0" TextWrapping="Wrap" Text="Name:string Age:int Dob:DateTime" VerticalAlignment="Top" Width="703"/>
+		<Button x:Name="Generate" Content="Generate Class" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Width="130" Click="Generate_Click" Height="33"/>
+		<TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="281" Margin="10,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="950" VerticalScrollBarVisibility="Visible"/>
+		<Label x:Name="label_Copy" Content="Class Name" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="txtClassName" HorizontalAlignment="Left" Height="23" Margin="10,105,0,0" TextWrapping="Wrap" Text="MyClassName" VerticalAlignment="Top" Width="210"/>
+        <Button Content="Copy" HorizontalAlignment="Left" Margin="885,170,0,0" VerticalAlignment="Top" Width="75" Click="Copy_Click"/>
+
+    </Grid>
+</Window>
