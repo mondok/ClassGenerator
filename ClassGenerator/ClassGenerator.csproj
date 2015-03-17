@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="Languages\CsharpGenerator.cs" />
     <Compile Include="Languages\IClassGenerator.cs" />
+    <Compile Include="Lib\Extensions.cs" />
     <Compile Include="Lib\ParsedProperty.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
