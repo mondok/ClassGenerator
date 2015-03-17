@@ -19,6 +19,18 @@ namespace ClassGenerator.Lib
             {
                 this.PropertyType = broken[1];
             }
+
+        }
+
+        /// <summary>
+        /// Gets the type of the property. 
+        /// Used to set a default if PropertyType is null
+        /// </summary>
+        /// <param name="defaultType">The default type.</param>
+        /// <returns>System.String.</returns>
+        public string GetPropertyType(string defaultType = "")
+        {
+            return this.PropertyType ?? defaultType;
         }
 
         /// <summary>

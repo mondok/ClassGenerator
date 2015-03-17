@@ -35,7 +35,7 @@ namespace ClassGenerator.Languages
                     .Select(s => new ParsedProperty(s));
             foreach (var property in properties)
             {
-                output.AppendFormat("\tpublic {0} {1} {{ get;set; }}", property.PropertyType, property.PropertyName.CsharpifyProperty());
+                output.AppendFormat("\tpublic {0} {1} {{ get;set; }}", property.GetPropertyType("string"), property.PropertyName.CsharpifyProperty());
                 output.AppendLine();
             }
             output.AppendLine("}");
