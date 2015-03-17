@@ -21,9 +21,10 @@ namespace ClassGenerator.Lib
             if (string.IsNullOrEmpty(value)) return String.Empty;
             string output = String.Empty;
             string okProps = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            bool upperNext = false;
+
             for(int i = 0; i < value.Length; i++)
             {
-                bool upperNext = false;
                 char c = value[i];
                 if (i == 0)
                 {
