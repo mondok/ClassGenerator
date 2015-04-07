@@ -10,4 +10,4 @@ This is intended as a very basic class generator for C# (and any other languages
 * Windows (because WPF)
 
 ## Building
-Clone this repository, open it in Visual Studio, and build it.    
+Clone this repository, open it in Visual Studio, and build it.  Alternatively, you can grab the executable from the Distribution folder.
